@@ -1,4 +1,4 @@
-{% set version = '1.2.5' %}
+{% set version = "1.2.8" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/wiesbaden_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/wiesbaden/wiesbaden_{{ version }}.tar.gz
-  sha256: fc64de8f6bfe4f140e8733740aca8b2e0a945ec68bb98e1873ca31484f39b913
+  sha256: 0a3c0525d2782d82b197035d45a0cb585770fec799e82eb1ac0411dfe36b76f3
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -51,8 +51,7 @@ test:
 about:
   home: https://github.com/sumtxt/wiesbaden/
   license: GPL-3.0-only
-  summary: Retrieve and import data from different databases of the Federal Statistical Office
-    of Germany (DESTATIS) using their SOAP XML web service <https://www-genesis.destatis.de/>.
+  summary: Retrieve and import data from different databases of the Federal Statistical Office of Germany (DESTATIS) using their SOAP XML web service <https://www-genesis.destatis.de/>.
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
