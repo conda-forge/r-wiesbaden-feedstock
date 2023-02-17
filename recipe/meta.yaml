@@ -1,4 +1,4 @@
-{% set version = "1.2.8" %}
+{% set version = "1.2.9" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/wiesbaden_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/wiesbaden/wiesbaden_{{ version }}.tar.gz
-  sha256: 0a3c0525d2782d82b197035d45a0cb585770fec799e82eb1ac0411dfe36b76f3
+  sha256: 0678a17b070594c9bcb6b2f4ad032f0a88ad6c0a40c1b0e5ba61d23f730fc669
 
 build:
   merge_build_host: true  # [win]
