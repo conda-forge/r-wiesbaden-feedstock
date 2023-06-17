@@ -1,11 +1,11 @@
-About r-wiesbaden
-=================
+About r-wiesbaden-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-wiesbaden-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/sumtxt/wiesbaden/
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-wiesbaden-feedstock/blob/main/LICENSE.txt)
 
 Summary: Retrieve and import data from different databases of the Federal Statistical Office of Germany (DESTATIS) using their SOAP XML web service <https://www-genesis.destatis.de/>.
 
